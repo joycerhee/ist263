@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Joyce Rhee</h1>
+        <p> 900 S Crouse Ave, Syracuse, NY 13244</p>
+        <a href="mailto:jjrhee@syr.edu">jjrhee@syr.edu</a>
+        <br>
+        <a href="https://www.linkedin.com/in/joycer16">My LinkedIn Profile</a>  
+        <a href="https://www.linkedin.com/in/joycer16"><img src="../images/LI-Logo.png" alt="LinkedIn Profile" style="width:300px;height:80px; display:block;"></a>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1321912793182!2d-76.13856310814116!3d43.03865009671945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1738452179569!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <form action="https://formspree.io/f/manqkgpb" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+        
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select><br><br>
+        
+            <label>Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Yes</label><br><br>
+        
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+        
+            <button type="submit">Send</button>
+        </form>
+
+    </body>
+
+</html>

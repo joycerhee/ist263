@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+           margin: 0;
+           font-family: Arial, sans-serif;
+           text-align: center;
+           color: white;
+        }
+        .message {
+            font-size: 2rem;
+            padding: 50px;
+            background-color: blue;
+        }
+        .message::before {
+            content: "I'm small";
+        }
+
+        @media screen and (min-width: 800px) {
+            .message {
+                background-color: red;
+            }
+            .message::before {
+                content: "I'm large";
+    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message"></div>
+</body>
+</html>
