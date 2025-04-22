@@ -5,12 +5,12 @@ h1, h2 {
     color: #DB7093;
 }
 .evenrow {
-    background-color: lightgray; /* Change this to your chosen color for even rows */
+    background-color: lightgray; 
 }
 h1 {
-    font-size: 2em; /* Adjust this value as desired */
+    font-size: 2em; 
 }
 
 h2 {
-    font-size: 1.5em; /* Adjust this value as desired */
+    font-size: 1.5em; 
 }
