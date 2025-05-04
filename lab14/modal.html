@@ -21,9 +21,43 @@
             padding: 5px;
         }
         /* write CSS to position our information and hide it when the page loads here */
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: black;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 100px auto;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
     </style>
     <script>
         /* add code to open and close our information modal */
+        function openModal() {
+        document.getElementById("infoModal").style.display = "block";
+        }
+
+    function closeModal() {
+        document.getElementById("infoModal").style.display = "none";
+        }
+
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("infoModal")) {
+            closeModal();
+            }
+        }   
     </script>
 </head>
 <body class="new-amsterdam-regular">
@@ -41,7 +75,15 @@
          <p>test text</p>
 
         <!-- Add Modal HTML code here -->
-
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Candy!</h2>
+                <img src="./images/candy.jpg" alt="Candy" width="200">
+                <br><br>
+                <button></button>
+            </div>
+        </div>$
     </div>
 </body>
 </html>
